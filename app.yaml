@@ -1,0 +1,13 @@
+application: rickrolley
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /_wave/.*
+  script: rickrolley.py
+
+- url: /gadgets
+  static_dir: static/gadgets
+- url: /images
+  static_dir: static/images
